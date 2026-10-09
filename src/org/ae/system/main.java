@@ -1,20 +1,25 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package org.ae.system;
 
-/**
- *
- * @author informatica
- */
-public class main {
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+public class main extends Application {
+
+    @Override
+    public void start(Stage primaryStage) throws Exception {
+        // Carga la vista de Login ubicada en la carpeta org/ae/view/
+        Parent root = FXMLLoader.load(getClass().getResource("/org/ae/view/LoginView.fxml"));
+        
+        primaryStage.setTitle("TastyBite Restaurant - Inicio de Sesión");
+        primaryStage.setScene(new Scene(root));
+        primaryStage.setResizable(false);
+        primaryStage.show();
     }
-    
+
+    public static void main(String[] args) {
+        launch(args);
+    }
 }
