@@ -6,9 +6,10 @@ import java.sql.SQLException;
 
 public class Conexion implements AutoCloseable {
 
-    private static final String URL = "jdbc:mysql://localhost:3306/tastybite_db?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC";
-    private static final String USER = "root";
-    private static final String PASSWORD = "Andresaquinol2010"; // Contraseña actualizada
+    // CAMBIAR 'tastybite_db' POR 'libreriadb_in4cm'
+    private static final String URL = "jdbc:mysql://127.0.0.1:3306/libreriadb_in4cm?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC";
+    private static final String USER = "IN4CM";
+    private static final String PASSWORD = "#NdimAM4";
 
     private static Conexion instancia;
     private Connection conexion;
