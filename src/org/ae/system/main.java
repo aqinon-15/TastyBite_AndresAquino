@@ -1,9 +1,10 @@
-package org.ae.system;
+package org.ae.system; // O el paquete exacto donde tengas guardada la clase
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+
 import javafx.stage.Stage;
 
 public class main extends Application {
@@ -19,6 +20,7 @@ public class main extends Application {
         primaryStage.show();
     }
 
+    // ASEGÚRATE DE QUE ESTA LÍNEA SEA EXACTAMENTE ASÍ:
     public static void main(String[] args) {
         launch(args);
     }
