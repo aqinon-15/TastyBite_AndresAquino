@@ -106,10 +106,13 @@ cd TastyBite_AndresAquino
 
       Paso 4: Compilar y EjecutarEn NetBeans, presiona Clean and Build (Shift + F11) y ejecuta la clase system.Main.
 
- ## 8. Credenciales de Prueba (Seeders)
-Rol            Usuario         Contraseña     Permisos
-Mesero         mesero            112345      Apertura de comanda y toma de pedidos 
-Cocinero       cocina            112345      Monitor FIFO de cocina 
-Cajero         cajero            112345      Facturación y cierre de mesaAdministradoradminadmin123Acceso global
+## 8. Credenciales de Prueba (Seeders)
+Rol            Usuario         Contraseña     nombre del empleado    Permisos
+Mesero         mesero1            12345           Carlos Gomez        Apertura de mesas, selección de menú y envío de comandas a cocina. 
+Mesero         mesero2            12345          Luis Fernandez       Apertura de mesas, selección de menú y envío de comandas a cocina.
+Cocinero       cocina1            12345          Ana Martinez         Monitor de comandas en tiempo real (FIFO) y cambio de estados. 
+Cajero         cajero1            12345          Mario Lopez          Cierre de mesa, cálculo de IVA/propina y emisión de factura.
+Administrador  admin            admin123        Andres Aquino         Acceso global y administración del sistema. 
+
 
 ## 9. Licencia y Derechos de AutorDesarrollado para la evaluación académica del curso de Taller I (IN4CM) en Fundación Kinal. Todos los derechos reservados para fines educativos.
