@@ -1,11 +1,11 @@
-# 🍽️ TastyBite Restaurant Management System
+# TastyBite Restaurant Management System
 
 **Proyecto Final de Evaluación Cátedra de Programación II**
 **Carrera:** Perito en Informática
 **Sección:** IN4CM  
 **Centro Educativo Técnico Laboral Kinal** ---
 
-## 📌 1. Información del Estudiante y Entrega
+## 1. Información del Estudiante y Entrega
 
 | Dato | Detalle |
 | :--- | :--- |
