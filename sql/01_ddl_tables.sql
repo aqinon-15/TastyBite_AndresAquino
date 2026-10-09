@@ -1,7 +1,4 @@
-DROP DATABASE IF EXISTS tastybite_db;
-CREATE DATABASE tastybite_db CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-USE tastybite_db;
-
+USE libreriadb_in4cm;
 -- 1. TABLA ROL
 CREATE TABLE rol (
     id_rol INT AUTO_INCREMENT PRIMARY KEY,
