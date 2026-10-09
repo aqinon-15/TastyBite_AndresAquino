@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/XML/XMLDocument.xml to edit this template
--->
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
 
-
-
-<root>
+<VBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" 
+      fx:controller="org.ae.controller.LoginController" 
+      alignment="CENTER" spacing="15.0" prefWidth="400.0" prefHeight="350.0">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
     
-</root>
-
+    <Label text="TastyBite Restaurant" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+    <Label text="Inicio de Sesión" style="-fx-font-size: 14px;"/>
+    
+    <TextField fx:id="txtUsername" promptText="Usuario"/>
+    <PasswordField fx:id="txtPassword" promptText="Contraseña"/>
+    
+    <Button text="Ingresar al Sistema" onAction="#handleLogin" prefWidth="200.0" 
+            style="-fx-background-color: #27ae60; -fx-text-fill: white; -fx-font-weight: bold;"/>
+</VBox>

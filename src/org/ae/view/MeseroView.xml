@@ -1,12 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/XML/XMLDocument.xml to edit this template
--->
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
 
+<VBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="org.ae.controller.MeseroController" spacing="10.0" prefWidth="500.0" prefHeight="400.0">
+    <padding>
+        <Insets top="15" right="15" bottom="15" left="15"/>
+    </padding>
 
-
-<root>
+    <Label text="Módulo de Mesero - Apertura y Comandas" style="-fx-font-size: 16px; -fx-font-weight: bold;"/>
     
-</root>
+    <HBox spacing="10.0" alignment="CENTER_LEFT">
+        <Label text="Seleccionar Mesa:"/>
+        <ComboBox fx:id="cbMesas"/>
+        <Button text="Abrir Mesa" onAction="#handleCrearPedido"/>
+    </HBox>
 
+    <Separator/>
+
+    <Label text="Agregar Detalle a la Comanda" style="-fx-font-weight: bold;"/>
+    <GridPane hgap="10" vgap="10">
+        <Label text="ID Platillo:" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+        <TextField fx:id="txtPlatilloId" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+
+        <Label text="Cantidad:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+        <TextField fx:id="txtCantidad" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+        <Label text="Observación:" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+        <TextField fx:id="txtObservacion" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+    </GridPane>
+
+    <Label fx:id="lblEstado" text="Estado: Esperando acción..." style="-fx-text-fill: #7f8c8d;"/>
+</VBox>
