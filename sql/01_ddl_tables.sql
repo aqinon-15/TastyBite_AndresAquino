@@ -1,4 +1,5 @@
 USE libreriadb_in4cm;
+
 -- 1. TABLA ROL
 CREATE TABLE rol (
     id_rol INT AUTO_INCREMENT PRIMARY KEY,
