@@ -11,7 +11,9 @@ public class main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
+        // Isukat ti .fxml iti .xml tapno pumada ti nagan ti archivo
         Parent root = FXMLLoader.load(getClass().getResource("/org/ae/view/LoginView.xml"));
+        
         primaryStage.setTitle("TastyBite Restaurant - Inicio de Sesión");
         primaryStage.setScene(new Scene(root));
         primaryStage.setResizable(false);
