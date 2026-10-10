@@ -116,3 +116,6 @@ Administrador  admin            admin123        Andres Aquino         Acceso glo
 
 
 ## 9. Licencia y Derechos de AutorDesarrollado para la evaluación académica del curso de Taller I (IN4CM) en Fundación Kinal. Todos los derechos reservados para fines educativos.
+
+## 10. video de presentacion de proyecto final
+https://youtu.be/Pu50tm4R_fk
